@@ -11,15 +11,23 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.1.0",
+    "@angular/cdk": "^14.2.1",
     "@angular/common": "^14.1.0",
     "@angular/compiler": "^14.1.0",
     "@angular/core": "^14.1.0",
+    "@angular/fire": "^7.4.1",
     "@angular/forms": "^14.1.0",
+    "@angular/material": "^14.2.1",
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
+    "firebase": "^9.10.0",
     "rxjs": "~7.5.0",
+    "subsink": "^1.0.2",
     "tslib": "^2.3.0",
+    "typed.js": "^2.0.12",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

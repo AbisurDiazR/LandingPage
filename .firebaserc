@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "abisur-c4b31"
+  },
+  "targets": {
+    "abisur-c4b31": {
+      "hosting": {
+        "landing": [
+          "landing-page-abisur"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

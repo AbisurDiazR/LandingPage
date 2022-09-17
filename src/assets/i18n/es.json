@@ -1,0 +1,14 @@
+{
+  "NAVBAR": {
+    "nav-logo": "Abisur",
+    "nav-home": "Inicio",
+    "nav-about": "Sobre Mí",
+    "nav-services": "Servicios",
+    "nav-clients": "Clientes",
+    "nav-works": "Trabajos",
+    "nav-contact": "Contacto"
+  },
+  "HOME": {
+    "section-skills": "Habilidades"
+  }
+}

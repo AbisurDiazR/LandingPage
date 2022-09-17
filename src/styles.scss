@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '/src/assets/scss/colors';
+html, body {
+  height: 100%;
+  background: radial-gradient(circle at 18.7% 37.8%, $first-gradient 0%, $second-gradient 90%);
+}
+html{
+  scroll-behavior: smooth;
+}
+body { margin: 0; }
+.nav-logo{
+  font-size: 18px;
+  color: $white-text-icons;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+}
+.nav-item{
+  font-size: 16px;
+  color: $white-text-icons;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.nav-item:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $accent-color;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+.nav-item-active{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $accent-color;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+.nav-item:hover::after{
+  transform: scale(1);
+  transform-origin: bottom left;
+}
+.home-skills-section{
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $primary-text;
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  margin: 0;
+}
+.home-skill{
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  margin: 0;
+}
