@@ -5,5 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class SkillsService {
 
-  constructor() { }
+  constructor(
+    //private fireStore: AngularFire
+  ) { }
+
+  public getSkills(){
+  }
 }

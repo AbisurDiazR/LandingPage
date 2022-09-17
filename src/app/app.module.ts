@@ -1,3 +1,4 @@
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpLoaderFactory, SharedModule } from './shared/shared.module';
@@ -9,9 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import locales from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
-//import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 registerLocaleData(locales);
 
 @NgModule({
@@ -29,8 +29,7 @@ registerLocaleData(locales);
         deps: [HttpClient]
       }
     }),
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore()),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'es-mx'}],
