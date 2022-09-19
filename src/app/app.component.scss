@@ -63,15 +63,11 @@
       }
     }
   }
-  .p-about-section {
-    display: flex;
-    justify-content: center;
-    padding: 25px;
-  }
 }
 @media (max-width: 700px) {
   .p-container {
     .p-navbar-default {
+      padding: 15px;
       .p-navbar-logo{
         margin: 0 15px;
       }

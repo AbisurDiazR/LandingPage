@@ -20,8 +20,8 @@ export class SkillsComponent implements OnInit {
   public setSkills() {
     this.skillService.getSkills().pipe().subscribe((res: any) => {
       const auxArray: any = [];
-      res.forEach((element: any) => {
-        auxArray.push(element.data().name);
+      res.skills.forEach((element: any) => {
+        auxArray.push(element.name);
       });
       const options = {
         strings: auxArray,
