@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Injectable({
   providedIn: 'root'
@@ -6,9 +7,10 @@ import { Injectable } from '@angular/core';
 export class SkillsService {
 
   constructor(
-    //private fireStore: AngularFire
+    private fireStore: AngularFirestore
   ) { }
 
   public getSkills(){
+    return this.fireStore.collection('skills').get();
   }
 }

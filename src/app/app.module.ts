@@ -12,11 +12,15 @@ import locales from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
+import { SkillsComponent } from './skills/skills.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 registerLocaleData(locales);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SkillsComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

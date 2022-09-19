@@ -1,30 +1,36 @@
-<nav class="p-navbar-default">
-  <div (click)="mostrar()" class="p-navbar-menu">
-    <mat-icon svgIcon="ic-menu"></mat-icon>
+<div class="p-container">
+  <div class="home-loader" *ngIf="!loader">
+    <mat-spinner></mat-spinner>
   </div>
-  <p class="p-navbar-logo nav-logo">{{
-    "NAVBAR.nav-logo" | translate | uppercase
-  }}</p>
-  <ul class="p-navbar-sections" [ngClass]="{'p-navbar-sections-show' : show}">
-    <li class="p-navbar-section-close"><span (click)="ocultar()">X</span></li>
-    <li *ngFor="let navItem of navItems" class="p-navbar-section nav-item">
-      {{ navItem | translate }}
-    </li>
-  </ul>
-</nav>
-<section class="p-home-section">
-  <div class="p-home-section-skills">
-    <p class="home-skills-section">{{'HOME.section-skills' | translate}}</p>
-    <p class="home-skill"></p>
-  </div>
-</section>
-<section class="p-about-section">
-</section>
-<section class="p-services-section">
-</section>
-<section class="p-clients-section">
-</section>
-<section class="p-works-section">
-</section>
-<section class="p-contact-section">
-</section>
+  <nav class="p-navbar-default">
+    <div (click)="mostrar()" class="p-navbar-menu">
+      <mat-icon svgIcon="ic-menu"></mat-icon>
+    </div>
+    <p class="p-navbar-logo nav-logo">
+      {{ "NAVBAR.nav-logo" | translate | uppercase }}
+    </p>
+    <ul
+      class="p-navbar-sections"
+      [ngClass]="{ 'p-navbar-sections-show': show }"
+    >
+      <li class="p-navbar-section-close"><span (click)="ocultar()">X</span></li>
+      <li *ngFor="let navItem of navItems" class="p-navbar-section nav-item">
+        {{ navItem | translate }}
+      </li>
+    </ul>
+  </nav>
+  <section class="p-home-section">
+    <div class="p-home-section-skills">
+      <p class="home-skills-section">{{ "HOME.section-skills" | translate }}</p>
+      <app-skills></app-skills>
+      <button class="p-home-section-skils-cv-button">
+        {{ "HOME.cv-button" | translate }}
+      </button>
+    </div>
+  </section>
+  <app-about-me></app-about-me>
+  <section class="p-services-section"></section>
+  <section class="p-clients-section"></section>
+  <section class="p-works-section"></section>
+  <section class="p-contact-section"></section>
+</div>

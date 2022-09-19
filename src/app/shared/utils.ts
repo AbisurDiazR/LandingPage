@@ -6,4 +6,5 @@ export const NAVBAR_ITEMS = [
   "NAVBAR.nav-clients",
   "NAVBAR.nav-works",
   "NAVBAR.nav-contact"
-]
+];
+export const ABOUT_ME_COLLECTION = 'N98pNbFsmmsC1MqgqXlL';

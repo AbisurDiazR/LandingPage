@@ -9,6 +9,7 @@
     "nav-contact": "Contacto"
   },
   "HOME": {
-    "section-skills": "Habilidades"
+    "section-skills": "Habilidades",
+    "cv-button": "Descargar CV"
   }
 }
