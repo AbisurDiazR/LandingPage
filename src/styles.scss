@@ -87,3 +87,13 @@ body { margin: 0; }
   border-radius: 8px;
   background: $divider-color;
 }
+section{
+  padding: 25px;
+  .title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: $secondary-text;
+  }
+}

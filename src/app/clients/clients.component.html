@@ -1,0 +1,21 @@
+<div class="c-container">
+  <p class="title">{{ "NAVBAR.nav-clients" | translate }}</p>
+  <div class="home-section-divider"></div>
+  <div class="c-box-container">
+    <div *ngFor="let client of clients" class="c-box">
+      <img
+        class="c-box-image"
+        src="{{client.logo}}"
+        alt=""
+        srcset=""
+      />
+      <h3 class="c-box-title">{{client.company}}</h3>
+      <div class="c-box-container-text">
+        <p class="c-box-text">
+          {{client.position}}
+        </p>
+      </div>
+      <a href="#" class="c-box-btn-more">Leer más</a>
+    </div>
+  </div>
+</div>

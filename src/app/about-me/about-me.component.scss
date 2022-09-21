@@ -7,13 +7,6 @@
     display: grid;
     grid-template-rows: repeat(2, auto);
     row-gap: 20px;
-    .a-title {
-      text-align: center;
-      font-size: 18px;
-      font-weight: 600;
-      margin: 0;
-      color: $secondary-text;
-    }
     .a-image-description-container {
       display: grid;
       grid-template-columns: repeat(2, auto);

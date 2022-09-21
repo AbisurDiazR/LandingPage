@@ -7,13 +7,6 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  .s-title {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 20px 0;
-    color: $secondary-text;
-  }
   .s-service-cards-item {
     display: flex;
     padding: 1rem;
@@ -29,7 +22,7 @@
       transition: 0.3s;
       .s-card-image {
         .s-service-image {
-          height: auto;
+          height: 250px;
           max-width: 100%;
           vertical-align: middle;
         }
