@@ -1,0 +1,35 @@
+<ul class="s-service-cards">
+  <p class="s-title">{{ "NAVBAR.nav-services" | translate }}</p>
+    <div class="home-section-divider"></div>
+  <li *ngFor="let service of services" class="s-service-cards-item">
+    <div class="s-card">
+      <div class="s-card-image">
+        <img
+          class="s-service-image"
+          src="{{service.icon}}"
+          alt=""
+        />
+      </div>
+      <div class="s-card-content">
+        <h2 class="s-card-title">{{service.name}}</h2>
+        <!---->
+        <button (click)="showDescription(service)" *ngIf="service.hidden" class="s-card-button btn">Ver más</button>
+        <button (click)="hidenDescription(service)" *ngIf="!service.hidden" class="s-card-button btn">Ver menos</button>
+        <div *ngIf="!service.hidden" class="s-card-text-container">
+          <p class="s-card-text">
+            {{service.description}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </li>
+  <!--<div class="s-service-content">
+    <figure class="s-service-figure">
+
+    </figure>
+    <div class="s-service-text">
+
+
+    </div>
+  </div>-->
+</ul>

@@ -14,13 +14,15 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { SkillsComponent } from './skills/skills.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { MyServicesComponent } from './my-services/my-services.component';
 registerLocaleData(locales);
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    MyServicesComponent
   ],
   imports: [
     BrowserModule,
