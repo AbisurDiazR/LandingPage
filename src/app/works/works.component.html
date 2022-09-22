@@ -7,17 +7,14 @@
       <div *ngFor="let work of works" class="w-card-item">
         <img
           class="w-card-image"
-          src="https://lh3.googleusercontent.com/-h9Vw01ffbKY/YGnJU35eHBI/AAAAAAAACAE/FbXDvjOc5ZojyWTbxkR6zDqG3dTdCNimgCLcBGAsYHQ/1.jpg"
+          src="{{work.capture}}"
           alt=""
         />
         <div class="w-card-details">
-          <h1 class="w-card-title">Card 1</h1>
+          <h1 class="w-card-title">{{work.name}}</h1>
           <div class="w-card-content">
             <p class="w-card-content-text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima,
-              iure nisi. Eos deserunt dolores dolor rem ratione veritatis,
-              perferendis, molestiae libero consectetur quas harum perspiciatis
-              eaque porro natus iure omnis!
+              {{work.description}}
             </p>
           </div>
         </div>

@@ -1,0 +1,24 @@
+<div class="c-container">
+  <p class="title">{{ "NAVBAR.nav-contact" | translate }}</p>
+  <div class="home-section-divider"></div>
+  <div class="c-form-container">
+    <form [formGroup]="commentFC" class="c-form">
+      <div class="c-form-name-email-input">
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Favorite food</mat-label>
+          <input formControlName="name" matInput placeholder="Ex. Pizza" value="Sushi" />
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Favorite food</mat-label>
+          <input formControlName="email" matInput placeholder="Ex. Pizza" value="Sushi" />
+        </mat-form-field>
+      </div>
+      <mat-form-field class="c-form-message-input" appearance="outline">
+        <mat-label>Leave a comment</mat-label>
+        <textarea formControlName="message" [rows]="6" matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+      <button (click)="sendEmail()" class="c-form-button-send">Enviar correo</button>
+    </form>
+  </div>
+</div>

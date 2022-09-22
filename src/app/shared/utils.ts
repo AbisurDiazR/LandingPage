@@ -8,3 +8,4 @@ export const NAVBAR_ITEMS = [
   "NAVBAR.nav-contact"
 ];
 export const ABOUT_ME_COLLECTION = 'N98pNbFsmmsC1MqgqXlL';
+export const URL_API = 'https://formsubmit.co/ajax/abisurdiazramirez@gmail.com';

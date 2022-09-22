@@ -1,0 +1,46 @@
+@import '/src/assets/scss/colors';
+.c-container {
+  .c-form-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    .c-form {
+      width: 700px;
+      .c-form-name-email-input{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+      }
+      .c-form-message-input{
+        width: 100%;
+      }
+      .c-form-button-send{
+        width: 100%;
+        height: 50px;
+        background: $accent-color;
+        color: $primary-text;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 8px;
+        border-color: $light-primary-color;
+        cursor: pointer;
+      }
+      .c-form-button-send:hover{
+        letter-spacing: 1px;
+        transform: scale(1.03);
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    .c-form-container {
+      .c-form {
+        width: 350px;
+        .c-form-name-email-input{
+          grid-template-columns: none;
+          grid-template-rows: repeat(2, 1fr);
+          row-gap: 15px;
+        }
+      }
+    }
+  }
+}
