@@ -22,7 +22,7 @@
   <section class="p-home-section">
     <div class="p-home-section-skills">
       <p class="home-skills-section">{{ "HOME.section-skills" | translate }}</p>
-      <app-skills></app-skills>
+      <div class="p-home-skills-animation"><app-skills></app-skills></div>
       <button class="p-home-section-skils-cv-button">
         {{ "HOME.cv-button" | translate }}
       </button>
@@ -35,6 +35,8 @@
   <section class="p-clients-section">
     <app-clients></app-clients>
   </section>
-  <section class="p-works-section"></section>
+  <section class="p-works-section">
+    <app-works></app-works>
+  </section>
   <section class="p-contact-section"></section>
 </div>

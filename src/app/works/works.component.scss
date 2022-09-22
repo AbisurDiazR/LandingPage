@@ -1,0 +1,64 @@
+@import '/src/assets/scss/colors';
+.w-container{
+  .w-container-works{
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+    .w-card-work{
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      position: relative;
+      display: grid;
+      gap: 10px;
+      .w-card-item{
+        position: relative;
+        .w-card-image{
+          height: 250px;
+          width: 300px;
+          transition: 0.4s ease-in-out all;
+        }
+        .w-card-details{
+          position: absolute;
+          padding: 10px 5px;
+          bottom: 0px;
+          opacity: 0;
+          transition: 0.4s ease-in-out all;
+          .w-card-title{
+            font-size: 18px;
+            margin: 2px 0;
+          }
+          .w-card-content{
+            width: 100%;
+            .w-card-content-text{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .w-card-item:hover{
+        .w-card-image{
+          transform: scale(1.05);
+        }
+        .w-card-details{
+          opacity: 1;
+          bottom: 10px;
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      .w-card-work{
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .w-card-work{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 450px) {
+      .w-card-work{
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

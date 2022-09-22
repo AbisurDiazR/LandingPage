@@ -16,6 +16,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MyServicesComponent } from './my-services/my-services.component';
 import { ClientsComponent } from './clients/clients.component';
+import { WorksComponent } from './works/works.component';
 registerLocaleData(locales);
 
 @NgModule({
@@ -24,7 +25,8 @@ registerLocaleData(locales);
     SkillsComponent,
     AboutMeComponent,
     MyServicesComponent,
-    ClientsComponent
+    ClientsComponent,
+    WorksComponent
   ],
   imports: [
     BrowserModule,
