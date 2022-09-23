@@ -14,12 +14,27 @@
       [ngClass]="{ 'p-navbar-sections-show': show }"
     >
       <li class="p-navbar-section-close"><span (click)="ocultar()">X</span></li>
-      <li *ngFor="let navItem of navItems" class="p-navbar-section nav-item">
-        {{ navItem | translate }}
+      <li (click)="navTo(home)" class="p-navbar-section nav-item">
+        {{ "NAVBAR.nav-home" | translate }}
+      </li>
+      <li (click)="navTo(about)" class="p-navbar-section nav-item">
+        {{ "NAVBAR.nav-about" | translate }}
+      </li>
+      <li (click)="navTo(services)" class="p-navbar-section nav-item">
+        {{ "NAVBAR.nav-services" | translate }}
+      </li>
+      <li (click)="navTo(clients)" class="p-navbar-section nav-item">
+        {{ "NAVBAR.nav-clients" | translate }}
+      </li>
+      <li (click)="navTo(works)" class="p-navbar-section nav-item">
+        {{ "NAVBAR.nav-works" | translate }}
+      </li>
+      <li (click)="navTo(contact)" class="p-navbar-section nav-item">
+        {{ "NAVBAR.nav-contact" | translate }}
       </li>
     </ul>
   </nav>
-  <section class="p-home-section">
+  <section #home class="p-home-section">
     <div class="p-home-section-skills">
       <p class="home-skills-section">{{ "HOME.section-skills" | translate }}</p>
       <div class="p-home-skills-animation"><app-skills></app-skills></div>
@@ -28,23 +43,26 @@
       </button>
     </div>
   </section>
-  <app-about-me></app-about-me>
-  <section class="p-services-section">
+  <!--<section *ngIf="loaded" class="p-about-section" [ngStyle]="{'background': aboutMe.background}"></section>-->
+  <section #about class="p-about-section">
+    <app-about-me></app-about-me>
+  </section>
+  <section #services class="p-services-section">
     <app-my-services></app-my-services>
   </section>
-  <section class="p-clients-section">
+  <section #clients class="p-clients-section">
     <app-clients></app-clients>
   </section>
-  <section class="p-works-section">
+  <section #works class="p-works-section">
     <app-works></app-works>
   </section>
-  <section class="p-contact-section">
+  <section #contact class="p-contact-section">
     <app-contact></app-contact>
   </section>
   <footer class="home-footer">
     <div class="p-home-social-networks-container">
       <div class="p-home-title">
-        <p>{{'HOME.social-network-title' | translate}}</p>
+        <p>{{ "HOME.social-network-title" | translate }}</p>
       </div>
       <app-social-networks></app-social-networks>
     </div>

@@ -8,13 +8,18 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import { ClientDialogComponent } from './client-dialog/client-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, "./assets/i18n/",".json");
 }
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ClientDialogComponent
+  ],
   imports: [
     CommonModule,
     TranslateModule,
@@ -23,7 +28,9 @@ export function HttpLoaderFactory(http: HttpClient){
     MatProgressSpinnerModule,
     ReactiveFormsModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    MatSnackBarModule
   ],
   exports: [
     TranslateModule,
@@ -32,7 +39,9 @@ export function HttpLoaderFactory(http: HttpClient){
     MatProgressSpinnerModule,
     ReactiveFormsModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    MatSnackBarModule
   ]
 })
 export class SharedModule { }

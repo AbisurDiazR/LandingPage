@@ -1,10 +1,8 @@
-<section *ngIf="loaded" class="p-about-section" [ngStyle]="{'background': aboutMe.background}">
-  <div class="a-container">
-    <p class="title">{{ "NAVBAR.nav-about" | translate }}</p>
-    <div class="home-section-divider"></div>
-    <div class="a-image-description-container">
-      <img class="a-image" src="{{ aboutMe.icon }}" alt="" srcset="" />
-      <p class="a-description">{{ aboutMe.description }}</p>
-    </div>
+<div *ngIf="loaded" class="a-container">
+  <p class="title">{{ "NAVBAR.nav-about" | translate }}</p>
+  <div class="home-section-divider"></div>
+  <div class="a-image-description-container">
+    <img class="a-image" src="{{ aboutMe.icon }}" alt="" srcset="" />
+    <p class="a-description">{{ aboutMe.description }}</p>
   </div>
-</section>
+</div>

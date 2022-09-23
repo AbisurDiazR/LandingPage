@@ -1,0 +1,40 @@
+<div class="cd-container">
+  <div class="cd-header">
+    <mat-icon
+      (click)="close()"
+      class="cd-header-icon"
+      svgIcon="ic-close"
+    ></mat-icon>
+  </div>
+  <div class="cd-content">
+    <div class="cd-content-image">
+      <img src="{{ data.logo }}" alt="" />
+    </div>
+    <div class="cd-content-description">
+      <div class="cd-content-description-section">
+        <p class="clients-title">{{ "CLIENTS.position" | translate }}</p>
+        <p>{{ data.position }}</p>
+      </div>
+      <div class="cd-content-description-section">
+        <p class="clients-title">{{ "CLIENTS.work-day" | translate }}</p>
+        <p>{{ data.working_day }}</p>
+      </div>
+      <div class="cd-content-description-section">
+        <p class="clients-title">{{ "CLIENTS.from" | translate }}</p>
+        <p>{{ startDate }}</p>
+      </div>
+      <div class="cd-content-description-section">
+        <p class="clients-title">{{ "CLIENTS.to" | translate }}</p>
+        <p>{{ endDate }}</p>
+      </div>
+      <div class="cd-content-description-section">
+        <p class="clients-title">{{ "CLIENTS.location" | translate }}</p>
+        <p>{{ data.location }}</p>
+      </div>
+      <div class="cd-content-description-activities">
+        <p class="clients-title">{{ "CLIENTS.activities" | translate }}</p>
+        <p>{{ data.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

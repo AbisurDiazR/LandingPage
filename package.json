@@ -25,6 +25,7 @@
     "@ngx-translate/http-loader": "^7.0.0",
     "docx": "^7.4.1",
     "firebase": "^9.10.0",
+    "moment": "^2.29.4",
     "rxjs": "~7.5.0",
     "subsink": "^1.0.2",
     "tslib": "^2.3.0",

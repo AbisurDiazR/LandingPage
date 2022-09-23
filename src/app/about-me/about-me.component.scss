@@ -1,8 +1,4 @@
 @import "/src/assets/scss/colors";
-.p-about-section {
-  display: flex;
-  justify-content: center;
-  padding: 25px;
   .a-container {
     display: grid;
     grid-template-rows: repeat(2, auto);
@@ -38,4 +34,4 @@
       }
     }
   }
-}
+

@@ -12,5 +12,13 @@
     "section-skills": "Habilidades",
     "cv-button": "Descargar CV",
     "social-network-title": "Redes sociales"
+  },
+  "CLIENTS": {
+    "position": "Puesto: ",
+    "work-day": "Jornada: ",
+    "from": "Desde: ",
+    "to": "Hasta: ",
+    "location": "Ubicación: ",
+    "activities": "Mis actividades"
   }
 }

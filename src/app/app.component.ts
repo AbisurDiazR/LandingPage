@@ -31,7 +31,8 @@ export class AppComponent implements OnInit {
     .addSvgIcon('ic-instagram',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/instagram-icon.svg'))
     .addSvgIcon('ic-linkedin',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/linkedin-icon.svg'))
     .addSvgIcon('ic-twitter',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/twitter-icon.svg'))
-    .addSvgIcon('ic-youtube',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/youtube-icon.svg'));
+    .addSvgIcon('ic-youtube',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/youtube-icon.svg'))
+    .addSvgIcon('ic-close',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/cross_circle.svg'));
 
   }
 
@@ -47,5 +48,10 @@ export class AppComponent implements OnInit {
 
   public ocultar() {
     this.show = false;
+  }
+
+  public navTo(target: any){
+    this.ocultar();
+    target.scrollIntoView();
   }
 }
