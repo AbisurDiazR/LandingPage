@@ -26,7 +26,12 @@ export class AppComponent implements OnInit {
     this.iconService.addSvgIcon(
       'ic-menu',
       this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/menu.svg')
-    );
+    )
+    .addSvgIcon('ic-facebook',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/facebook-icon.svg'))
+    .addSvgIcon('ic-instagram',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/instagram-icon.svg'))
+    .addSvgIcon('ic-linkedin',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/linkedin-icon.svg'))
+    .addSvgIcon('ic-twitter',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/twitter-icon.svg'))
+    .addSvgIcon('ic-youtube',this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/youtube-icon.svg'));
 
   }
 

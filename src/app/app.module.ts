@@ -18,6 +18,7 @@ import { MyServicesComponent } from './my-services/my-services.component';
 import { ClientsComponent } from './clients/clients.component';
 import { WorksComponent } from './works/works.component';
 import { ContactComponent } from './contact/contact.component';
+import { SocialNetworksComponent } from './social-networks/social-networks.component';
 registerLocaleData(locales);
 
 @NgModule({
@@ -28,7 +29,8 @@ registerLocaleData(locales);
     MyServicesComponent,
     ClientsComponent,
     WorksComponent,
-    ContactComponent
+    ContactComponent,
+    SocialNetworksComponent
   ],
   imports: [
     BrowserModule,

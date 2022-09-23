@@ -71,6 +71,15 @@
   .p-clients-section{
     background: $white-text-icons;
   }
+  .p-home-social-networks-container{
+    .p-home-title{
+      color: $white-text-icons;
+      font-size: 22px;
+      font-weight: 600;
+      font-family: cursive;
+      text-align: center;
+    }
+  }
 }
 @media (max-width: 700px) {
   .p-container {
