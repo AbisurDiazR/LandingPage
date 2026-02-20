@@ -4,11 +4,74 @@
     "nav-home": "Inicio",
     "nav-about": "Sobre Mí",
     "nav-services": "Servicios",
-    "nav-clients": "Clientes",
+    "nav-skills": "Habilidades",
     "nav-works": "Trabajos",
+    "nav-faq": "Preguntas frecuentes",
     "nav-contact": "Contacto"
   },
   "HOME": {
-    "section-skills": "Habilidades"
+    "title": "Abisur Díaz Ramírez",
+    "subtitle": "Desarrollador Full Stack · Angular, React, Node.js, Java · Web y Móvil",
+    "section-skills": "Habilidades",
+    "cta-whatsapp": "Contactar por WhatsApp"
+  },
+  "ABOUT": {
+    "title": "Sobre Mí",
+    "summary": "Desarrollador Full Stack con más de 5 años de experiencia en aplicaciones web y móviles. Especializado en Angular, React y Node.js, con experiencia en fintech, salud, eventos y retail.",
+    "summary2": "Defensor de arquitectura limpia, alto rendimiento y excelente experiencia de usuario. Metodologías ágiles y trabajo en equipo."
+  },
+  "SERVICES": {
+    "title": "Servicios",
+    "web": "Desarrollo Web",
+    "web-desc": "Aplicaciones web modernas con Angular o React, escalables y optimizadas.",
+    "mobile": "Apps Móviles",
+    "mobile-desc": "Aplicaciones móviles con Flutter para iOS y Android.",
+    "api": "APIs y Backend",
+    "api-desc": "APIs REST con Node.js o Java, integraciones y facturación electrónica.",
+    "modernize": "Modernización",
+    "modernize-desc": "Migración de sistemas legacy a stack actual (Angular, Node, cloud)."
+  },
+  "SKILLS": {
+    "title": "Habilidades",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Bases de Datos",
+    "cloud": "Cloud y DevOps",
+    "tools": "Herramientas",
+    "methodologies": "Metodologías"
+  },
+  "WORKS": {
+    "title": "Proyectos",
+    "gulf": "Backend y móvil (Java, Flutter, Node, AWS). POS, facturación, APIs.",
+    "citi": "Frontend y soporte backend. AngularJS/Angular, mejoras de UI y rendimiento.",
+    "bambu": "Full Stack para app de conferencia. Flutter, Node, Firebase, validación de asistencia.",
+    "kinsper": "Full Stack. MVP CRM, cancionero digital con Flutter y MongoDB."
+  },
+  "PROJECTS": {
+    "title": "Proyectos",
+    "club51": { "title": "Cava virtual Club 51", "desc": "Reserva de bebidas y mesas para el bar Club 51.", "alt": "Proyecto Cava virtual Club 51: pantalla del sistema de reserva de bebidas y mesas para el bar Club 51, desarrollo web." },
+    "ado": { "title": "Administrador de promociones ADO", "desc": "Sistema de promociones para la empresa de autobuses ADO.", "alt": "Proyecto administrador de promociones ADO: sistema de promociones para autobuses ADO, desarrollo a medida." },
+    "donaciones": { "title": "Portal de donaciones", "desc": "Portal de donaciones de una asociación civil de padres de familia.", "alt": "Proyecto portal de donaciones: plataforma de donaciones de asociación civil de padres de familia." },
+    "weedapolis": { "title": "Weedapolis", "desc": "Ecommerce de productos cannábicos.", "alt": "Proyecto Weedapolis: tienda en línea ecommerce de productos cannábicos." },
+    "lumbini": { "title": "Lumbini", "desc": "Aplicación de atención psicológica.", "alt": "Proyecto Lumbini: aplicación móvil de atención psicológica." },
+    "cumbres": { "title": "Cumbres by Blu", "desc": "Aplicación de registro para el evento Cumbres by Blu.", "alt": "Proyecto Cumbres by Blu: aplicación de registro para el evento Cumbres by Blu." },
+    "cuautepec": { "title": "Administrador Cuautepec", "desc": "Administrador de licencias y permisos del estado de Cuautepec.", "alt": "Proyecto administrador de licencias y permisos del estado de Cuautepec, desarrollo de software gubernamental." },
+    "auriga": { "title": "Auriga", "desc": "Administrador de espacios comerciales del centro comercial Auriga.", "alt": "Proyecto centro comercial Auriga: administrador de espacios comerciales." }
+  },
+  "CONTACT": {
+    "title": "Contacto",
+    "text": "¿Tienes un proyecto en mente? Escríbeme por WhatsApp y te respondo a la brevedad.",
+    "cta": "Abrir WhatsApp"
+  },
+  "FAQ": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Cómo puedo contratar un desarrollador full stack para mi proyecto?",
+    "a1": "Puedes contactarme por WhatsApp para contarme tu idea. Te pido detalles del proyecto (web, app móvil, ecommerce, etc.) y te envío un presupuesto sin compromiso. Trabajo de forma freelance para empresas y emprendedores en México.",
+    "q2": "¿Qué tipos de proyectos desarrollas?",
+    "a2": "Desarrollo web (sitios y aplicaciones con Angular o React), aplicaciones móviles para iOS y Android con Flutter, ecommerce, APIs y sistemas a medida, portales de donaciones, administradores y modernización de sistemas legacy.",
+    "q3": "¿En qué tecnologías trabajas?",
+    "a3": "Frontend: Angular, React, Flutter, TypeScript. Backend: Node.js, Java. Bases de datos: MongoDB, MySQL, Firebase. Cloud: AWS, Docker. Metodologías ágiles y Scrum.",
+    "q4": "¿Ofreces presupuesto sin compromiso?",
+    "a4": "Sí. Cuéntame tu proyecto por WhatsApp y te respondo con una estimación y opciones (alcance, tiempos, costos). Sin compromiso hasta que acordemos el contrato."
   }
 }

@@ -1,30 +1,158 @@
-<nav class="p-navbar-default">
-  <div (click)="mostrar()" class="p-navbar-menu">
-    <mat-icon svgIcon="ic-menu"></mat-icon>
+<nav class="navbar navbar-expand-xl navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#nav-home">{{ "NAVBAR.nav-logo" | translate }}</a>
+    <button class="navbar-toggler" type="button" (click)="toggleNav()"
+            [attr.aria-expanded]="show"
+            [attr.aria-controls]="'navbarSupportedContent'"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [class.show]="show" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" *ngFor="let navItem of navItems">
+          <a class="nav-link" (click)="cerrarNav()" [href]="'#' + getSectionId(navItem)">{{ navItem | translate }}</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <p class="p-navbar-logo nav-logo">{{
-    "NAVBAR.nav-logo" | translate | uppercase
-  }}</p>
-  <ul class="p-navbar-sections" [ngClass]="{'p-navbar-sections-show' : show}">
-    <li class="p-navbar-section-close"><span (click)="ocultar()">X</span></li>
-    <li *ngFor="let navItem of navItems" class="p-navbar-section nav-item">
-      {{ navItem | translate }}
-    </li>
-  </ul>
 </nav>
-<section class="p-home-section">
-  <div class="p-home-section-skills">
-    <p class="home-skills-section">{{'HOME.section-skills' | translate}}</p>
+
+<section id="nav-home" class="p-home-section">
+  <div class="p-home-section-content">
+    <h1 class="p-home-title">{{ "HOME.title" | translate }}</h1>
+    <p class="p-home-subtitle">{{ "HOME.subtitle" | translate }}</p>
     <p class="home-skill"></p>
   </div>
 </section>
-<section class="p-about-section">
+
+<section id="nav-about" class="p-about-section">
+  <div class="p-section-inner">
+    <h2 class="p-section-title">{{ "ABOUT.title" | translate }}</h2>
+    <p class="p-about-text">{{ "ABOUT.summary" | translate }}</p>
+    <p class="p-about-text">{{ "ABOUT.summary2" | translate }}</p>
+  </div>
 </section>
-<section class="p-services-section">
+
+<section id="nav-services" class="p-services-section">
+  <div class="p-section-inner">
+    <h2 class="p-section-title">{{ "SERVICES.title" | translate }}</h2>
+    <div class="p-services-grid">
+      <article class="p-service-card">
+        <h3>{{ "SERVICES.web" | translate }}</h3>
+        <p>{{ "SERVICES.web-desc" | translate }}</p>
+      </article>
+      <article class="p-service-card">
+        <h3>{{ "SERVICES.mobile" | translate }}</h3>
+        <p>{{ "SERVICES.mobile-desc" | translate }}</p>
+      </article>
+      <article class="p-service-card">
+        <h3>{{ "SERVICES.api" | translate }}</h3>
+        <p>{{ "SERVICES.api-desc" | translate }}</p>
+      </article>
+      <article class="p-service-card">
+        <h3>{{ "SERVICES.modernize" | translate }}</h3>
+        <p>{{ "SERVICES.modernize-desc" | translate }}</p>
+      </article>
+    </div>
+  </div>
 </section>
-<section class="p-clients-section">
+
+<section id="nav-skills" class="p-skills-section">
+  <div class="p-section-inner">
+    <h2 class="p-section-title">{{ "SKILLS.title" | translate }}</h2>
+    <div class="p-skills-grid">
+      <div class="p-skill-group">
+        <h3>{{ "SKILLS.frontend" | translate }}</h3>
+        <ul>
+          <li *ngFor="let s of skills.frontend">{{ s }}</li>
+        </ul>
+      </div>
+      <div class="p-skill-group">
+        <h3>{{ "SKILLS.backend" | translate }}</h3>
+        <ul>
+          <li *ngFor="let s of skills.backend">{{ s }}</li>
+        </ul>
+      </div>
+      <div class="p-skill-group">
+        <h3>{{ "SKILLS.databases" | translate }}</h3>
+        <ul>
+          <li *ngFor="let s of skills.databases">{{ s }}</li>
+        </ul>
+      </div>
+      <div class="p-skill-group">
+        <h3>{{ "SKILLS.cloud" | translate }}</h3>
+        <ul>
+          <li *ngFor="let s of skills.cloudDevOps">{{ s }}</li>
+        </ul>
+      </div>
+      <div class="p-skill-group">
+        <h3>{{ "SKILLS.tools" | translate }}</h3>
+        <ul>
+          <li *ngFor="let s of skills.tools">{{ s }}</li>
+        </ul>
+      </div>
+      <div class="p-skill-group">
+        <h3>{{ "SKILLS.methodologies" | translate }}</h3>
+        <ul>
+          <li *ngFor="let s of skills.methodologies">{{ s }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
-<section class="p-works-section">
+
+<section id="nav-works" class="p-works-section">
+  <div class="p-section-inner">
+    <h2 class="p-section-title">{{ "PROJECTS.title" | translate }}</h2>
+    <div class="p-projects-grid">
+      <article class="p-project-card" *ngFor="let project of projects">
+        <div class="p-project-card-image">
+          <img [src]="project.image" [alt]="project.altKey | translate" loading="lazy" />
+        </div>
+        <div class="p-project-card-body">
+          <h3 class="p-project-card-title">{{ project.titleKey | translate }}</h3>
+          <p class="p-project-card-desc">{{ project.descKey | translate }}</p>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
-<section class="p-contact-section">
+
+<section id="nav-faq" class="p-faq-section">
+  <div class="p-section-inner">
+    <h2 class="p-section-title">{{ "FAQ.title" | translate }}</h2>
+    <div class="p-faq-list">
+      <article class="p-faq-item">
+        <h3 class="p-faq-question">{{ "FAQ.q1" | translate }}</h3>
+        <p class="p-faq-answer">{{ "FAQ.a1" | translate }}</p>
+      </article>
+      <article class="p-faq-item">
+        <h3 class="p-faq-question">{{ "FAQ.q2" | translate }}</h3>
+        <p class="p-faq-answer">{{ "FAQ.a2" | translate }}</p>
+      </article>
+      <article class="p-faq-item">
+        <h3 class="p-faq-question">{{ "FAQ.q3" | translate }}</h3>
+        <p class="p-faq-answer">{{ "FAQ.a3" | translate }}</p>
+      </article>
+      <article class="p-faq-item">
+        <h3 class="p-faq-question">{{ "FAQ.q4" | translate }}</h3>
+        <p class="p-faq-answer">{{ "FAQ.a4" | translate }}</p>
+      </article>
+    </div>
+  </div>
 </section>
+
+<section id="nav-contact" class="p-contact-section">
+  <div class="p-section-inner p-contact-inner">
+    <h2 class="p-section-title">{{ "CONTACT.title" | translate }}</h2>
+    <p class="p-contact-text">{{ "CONTACT.text" | translate }}</p>
+    <a (click)="openWhatsApp()" class="p-contact-whatsapp">
+      <svg class="p-whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true"><path fill="currentColor" d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg>
+      {{ "CONTACT.cta" | translate }}
+    </a>
+  </div>
+</section>
+
+<a (click)="openWhatsApp()" class="p-whatsapp-float" aria-label="Contactar por WhatsApp">
+  <svg class="p-whatsapp-icon p-whatsapp-float-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true"><path fill="currentColor" d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg>
+</a>
