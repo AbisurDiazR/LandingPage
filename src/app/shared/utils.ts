@@ -60,8 +60,8 @@ export const PROJECTS = [
   { id: 'ado', image: 'assets/images/projects/ado.png', titleKey: 'PROJECTS.ado.title', descKey: 'PROJECTS.ado.desc', altKey: 'PROJECTS.ado.alt' },
   { id: 'donaciones', image: 'assets/images/projects/donaciones.jpg', titleKey: 'PROJECTS.donaciones.title', descKey: 'PROJECTS.donaciones.desc', altKey: 'PROJECTS.donaciones.alt' },
   { id: 'weedapolis', image: 'assets/images/projects/weedapolis.png', titleKey: 'PROJECTS.weedapolis.title', descKey: 'PROJECTS.weedapolis.desc', altKey: 'PROJECTS.weedapolis.alt' },
-  { id: 'lumbini', image: 'assets/images/projects/lumbini.png', titleKey: 'PROJECTS.lumbini.title', descKey: 'PROJECTS.lumbini.desc', altKey: 'PROJECTS.lumbini.alt' },
-  { id: 'cumbres', image: 'assets/images/projects/cumbres.png', titleKey: 'PROJECTS.cumbres.title', descKey: 'PROJECTS.cumbres.desc', altKey: 'PROJECTS.cumbres.alt' },
+  { id: 'lumbini', image: 'assets/images/projects/lumbini.jpeg', titleKey: 'PROJECTS.lumbini.title', descKey: 'PROJECTS.lumbini.desc', altKey: 'PROJECTS.lumbini.alt' },
+  { id: 'cumbres', image: 'assets/images/projects/cumbres.jpg', titleKey: 'PROJECTS.cumbres.title', descKey: 'PROJECTS.cumbres.desc', altKey: 'PROJECTS.cumbres.alt' },
   { id: 'cuautepec', image: 'assets/images/projects/cuautepec.png', titleKey: 'PROJECTS.cuautepec.title', descKey: 'PROJECTS.cuautepec.desc', altKey: 'PROJECTS.cuautepec.alt' },
   { id: 'auriga', image: 'assets/images/projects/auriga.png', titleKey: 'PROJECTS.auriga.title', descKey: 'PROJECTS.auriga.desc', altKey: 'PROJECTS.auriga.alt' },
 ];

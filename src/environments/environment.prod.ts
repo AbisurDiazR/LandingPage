@@ -1,4 +1,6 @@
 export const environment = {
+  production: true,
+  appUrl: 'https://abisur.tech',
   firebase: {
     projectId: 'abisur-c4b31',
     appId: '1:645343379536:web:0eb729e6ca3401c7971155',
@@ -9,5 +11,4 @@ export const environment = {
     messagingSenderId: '645343379536',
     measurementId: 'G-YZWCVZ8YPT',
   },
-  production: true
 };

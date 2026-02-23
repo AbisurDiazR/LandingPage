@@ -3,6 +3,7 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { DEFAULT_LANGUAGE, NAVBAR_ITEMS, PROJECTS, SKILLS, WHATSAPP_URL } from './shared/utils';
+import { VisitService } from './visit.service';
 import Typed from 'typed.js';
 
 @Component({
@@ -21,7 +22,8 @@ export class AppComponent implements OnInit {
   constructor(
     private translateService: TranslateService,
     private iconService: MatIconRegistry,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private visitService: VisitService
   ) {
     this.translateService.setDefaultLang(DEFAULT_LANGUAGE);
     this.translateService.use(DEFAULT_LANGUAGE);
@@ -32,6 +34,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.visitService.registerVisit();
     this.initTyped();
   }
 
