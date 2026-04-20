@@ -4,6 +4,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpLoaderFactory, SharedModule } from './shared/shared.module';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,6 +22,7 @@ registerLocaleData(locales);
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     SharedModule,
     TranslateModule.forRoot({
       loader: {

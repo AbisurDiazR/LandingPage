@@ -26,7 +26,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/robots.txt"
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
@@ -40,12 +41,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "1.2mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kb",
-                  "maximumError": "8kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "12kb"
                 }
               ],
               "fileReplacements": [
@@ -69,12 +70,18 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "Portfolio:build:development",
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
-              "browserTarget": "Portfolio:build:production"
+              "browserTarget": "Portfolio:build:production",
+              "proxyConfig": "proxy.conf.json"
             },
             "development": {
-              "browserTarget": "Portfolio:build:development"
+              "browserTarget": "Portfolio:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -96,7 +103,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/robots.txt"
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",

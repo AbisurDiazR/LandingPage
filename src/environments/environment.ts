@@ -13,6 +13,9 @@ export const environment = {
     messagingSenderId: '645343379536',
     measurementId: 'G-YZWCVZ8YPT',
   },
+  sender: 're_dUdq8kLC_GxHHCmmKFx4iDpByVniWTFT1',
+  senderDomain: 'abisur.tech',
+  contactEmail: 'contacto@abisur.tech',
   production: false
 };
 

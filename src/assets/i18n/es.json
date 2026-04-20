@@ -7,18 +7,32 @@
     "nav-skills": "Habilidades",
     "nav-works": "Trabajos",
     "nav-faq": "Preguntas frecuentes",
-    "nav-contact": "Contacto"
+    "nav-contact": "Contacto",
+    "nav-portfolio": "Portafolio",
+    "nav-testimonial": "Testimonios",
+    "cta-contact": "Contáctame"
   },
   "HOME": {
+    "hello": "¡Hola!",
     "title": "Abisur Díaz Ramírez",
     "subtitle": "Desarrollador Full Stack · Angular, React, Node.js, Java · Web y Móvil",
+    "intro": "Desarrollador con más de 5 años de experiencia en aplicaciones web y móviles. Especializado en Angular, React, Node.js y Flutter.",
+    "cta-hire": "Contrátame",
+    "cta-cv": "Descargar CV",
     "section-skills": "Habilidades",
     "cta-whatsapp": "Contactar por WhatsApp"
   },
   "ABOUT": {
     "title": "Sobre Mí",
     "summary": "Desarrollador Full Stack con más de 5 años de experiencia en aplicaciones web y móviles. Especializado en Angular, React y Node.js, con experiencia en fintech, salud, eventos y retail.",
-    "summary2": "Defensor de arquitectura limpia, alto rendimiento y excelente experiencia de usuario. Metodologías ágiles y trabajo en equipo."
+    "summary2": "Defensor de arquitectura limpia, alto rendimiento y excelente experiencia de usuario. Metodologías ágiles y trabajo en equipo.",
+    "card1-title": "Desarrollo Web",
+    "card1-desc": "Aplicaciones web modernas con Angular o React, escalables y optimizadas.",
+    "card2-title": "Apps Móviles",
+    "card2-desc": "Aplicaciones móviles con Flutter para iOS y Android.",
+    "card3-title": "APIs y Backend",
+    "card3-desc": "APIs REST con Node.js o Java, integraciones y facturación electrónica.",
+    "read-more": "Leer más"
   },
   "SERVICES": {
     "title": "Servicios",
@@ -59,9 +73,16 @@
     "auriga": { "title": "Auriga", "desc": "Administrador de espacios comerciales del centro comercial Auriga.", "alt": "Proyecto centro comercial Auriga: administrador de espacios comerciales." }
   },
   "CONTACT": {
-    "title": "Contacto",
-    "text": "¿Tienes un proyecto en mente? Escríbeme por WhatsApp y te respondo a la brevedad.",
+    "title": "Contáctame",
+    "text": "¿Tienes un proyecto en mente? Déjame tu correo y te respondo a la brevedad.",
+    "placeholder-email": "Tu correo",
+    "cta-send": "Enviar mensaje",
     "cta": "Abrir WhatsApp"
+  },
+  "TESTIMONIALS": {
+    "title": "Testimonios",
+    "t1": { "name": "Cliente 1", "role": "CEO", "quote": "Excelente profesional. Entregó el proyecto a tiempo y con gran calidad. Muy recomendado." },
+    "t2": { "name": "Cliente 2", "role": "Director", "quote": "Trabajo impecable en nuestra aplicación. Comunicación clara y resultados sobresalientes." }
   },
   "FAQ": {
     "title": "Preguntas frecuentes",
